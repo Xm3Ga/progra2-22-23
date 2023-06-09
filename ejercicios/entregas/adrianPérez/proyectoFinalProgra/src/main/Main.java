@@ -8,6 +8,7 @@ public class Main {
         NormalClimbing normalClimbing = new NormalClimbing();
         FatiguedClimbing fatiguedClimbing = new FatiguedClimbing();
         ExhaustedClimbing exhaustedClimbing = new ExhaustedClimbing();
+        CarEarthquake carEarthquake = new CarEarthquake();
         Snail snail = new Snail();
 
         boolean VidaCaracol = true;
@@ -16,9 +17,7 @@ public class Main {
         double profundidadCaracol = Math.round(profundidadCaracolInicial*100)/100;
         profundidadCaracolInicial = Math.round(profundidadCaracolInicial*100)/100;
         int dia = 0;
-        double distanciaSubida = 0;
-        double distanciaCaida = 0;
-        double probabilidadCoche;
+ 
 
 
         while ( VidaCaracol ){
@@ -36,12 +35,7 @@ public class Main {
                 normalClimbing.falling();
             }     
 
-            probabilidadCoche = Math.random();
-            if(probabilidadCoche <= 0.35){
-                coche = true;
-                System.out.println("Un coche ha creado un miniterremoto y el caracol ha caido 2 metros");
-                distanciaCaida = distanciaCaida + 2;
-            }
+            carEarthquake.carEarthquake();
 
             double probabilidadLluvia = Math.random();
             if( probabilidadLluvia <= 0.05 ){
@@ -50,10 +44,8 @@ public class Main {
                 weatherConditionBad.subidaAguaLLuvia();
             }
 
-        profundidadCaracol = ((profundidadCaracol - distanciaSubida) + distanciaCaida);
-        dia = dia + 1;
 
-        System.out.println("Dia [" + dia + "]  /  Punto de inico: [" + profundidadCaracolInicial + "]  /  Sube: [" + distanciaSubida + "]  /  Baja: [" + distanciaCaida + "]  /  Altura al final del dia: [-" + profundidadCaracol + "] ");
+        System.out.println("Dia [" + dia + "]  /  Punto de inico: [" + profundidadCaracolInicial + "]  /  Altura al final del dia: [-" + profundidadCaracol + "] ");
         for(int i = 0; i <=20 ; i=i+1){
             if(i == 0){
                 if(coche){
