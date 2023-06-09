@@ -5,6 +5,9 @@ public class Main {
 
         WeatherConditionBad weatherConditionBad = new WeatherConditionBad();
         WeatherConditionWorse weatherConditionWorse = new WeatherConditionWorse();
+        NormalClimbing normalClimbing = new NormalClimbing();
+        FatiguedClimbing fatiguedClimbing = new FatiguedClimbing();
+        ExhaustedClimbing exhaustedClimbing = new ExhaustedClimbing();
         Snail snail = new Snail();
 
         boolean VidaCaracol = true;
@@ -13,33 +16,24 @@ public class Main {
         double profundidadCaracol = Math.round(profundidadCaracolInicial*100)/100;
         profundidadCaracolInicial = Math.round(profundidadCaracolInicial*100)/100;
         int dia = 0;
-        double distanciaSubida;
-        double distanciaCaida;
+        double distanciaSubida = 0;
+        double distanciaCaida = 0;
         double probabilidadCoche;
 
 
         while ( VidaCaracol ){
 
             if(dia > 10 && dia <= 20){
-                double subida = (Math.random()*3)+1;
-                distanciaSubida = Math.round(subida*100.00)/100.00;
-                double caida = (Math.random()*2);
-                distanciaCaida = Math.round(caida*100.00)/100.00;
-                profundidadCaracol = Math.round(profundidadCaracol*100.00)/100.00;
+                fatiguedClimbing.ascending();
+                fatiguedClimbing.falling();
             }else if(dia > 20 && dia < 50){
-                double subida = (Math.random()*3)+1;
-                distanciaSubida = Math.round(subida*100.00)/100.00;
-                double caida = (Math.random()*2);
-                distanciaCaida = Math.round(caida*100.00)/100.00;
-                profundidadCaracol = Math.round(profundidadCaracol*100.00)/100.00;
+                exhaustedClimbing.ascending();
+                exhaustedClimbing.falling();
             }else if(dia == 50){
                 break;
             }else{
-                double subida = (Math.random()*3)+1;
-                distanciaSubida = Math.round(subida*100.00)/100.00;
-                double caida = (Math.random()*2);
-                distanciaCaida = Math.round(caida*100.00)/100.00;
-                profundidadCaracol = Math.round(profundidadCaracol*100.00)/100.00;
+                normalClimbing.ascending();
+                normalClimbing.falling();
             }     
 
             probabilidadCoche = Math.random();
