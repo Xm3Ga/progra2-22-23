@@ -13,12 +13,10 @@ public class Main {
         Draw draw = new Draw();
 
         boolean VidaCaracol = true;
-        boolean coche = false; 
  
         if (snail.getDia() == 0){
             snail.AlturaInicialCaracol();
             }
-
 
         while ( VidaCaracol ){
 
@@ -47,8 +45,8 @@ public class Main {
 
         for(int i = 0; i <=20 ; i=i+1){
             if(i == 0){
-                if(coche){
-                    coche = false;
+                if(carEarthquake.isCar() == true){
+                    carEarthquake.setCar(false);
                     System.out.println(draw.drawings[0]);
 
                 }else{
@@ -62,6 +60,7 @@ public class Main {
             }else{
                 System.out.println(draw.drawings[4]+ i);
             }
+            
         }    
         System.out.println(draw.drawings[5]);
         System.out.println();
@@ -71,13 +70,17 @@ public class Main {
             break;
         }
 
+        snail.setDia(snail.getDia() + 1);
         }
+
+      
     if((int)snail.getProfundidadCaracol() <= 0){
         System.out.println("El caracol ha conseguido salir!!!!");
     }else if((int)snail.getProfundidadCaracol() >= snail.getProfundidadAgua()){
-        System.out.println("El caracol se ahogo intentando salir en el snail.getDia() " + (snail.getDia()-1));
+        System.out.println("El caracol se ahogo intentando salir en el dia() " + (snail.getDia()-1));
     }else if(snail.getDia() == 50){
-        System.out.println("El caracol murio de inanicion tras luchar 50 snail.getDia()s");
-}
-}
+        System.out.println("El caracol murio de inanicion tras luchar 50 dias");
+    }
+
+    }
 }
