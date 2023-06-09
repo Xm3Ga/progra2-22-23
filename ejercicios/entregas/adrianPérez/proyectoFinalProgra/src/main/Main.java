@@ -10,6 +10,7 @@ public class Main {
         ExhaustedClimbing exhaustedClimbing = new ExhaustedClimbing();
         CarEarthquake carEarthquake = new CarEarthquake();
         Snail snail = new Snail();
+        Draw draw = new Draw();
 
         boolean VidaCaracol = true;
         boolean coche = false;
@@ -50,21 +51,21 @@ public class Main {
             if(i == 0){
                 if(coche){
                     coche = false;
-                    System.out.println("[__]    O-=-O     [__]");
+                    System.out.println(draw.drawings[0]);
 
                 }else{
-                    System.out.println("[__]              [__]");
+                    System.out.println(draw.drawings[1]);
                 }
 
             }else if (i >= snail.getProfundidadAgua()){
-                System.out.println("  []~~~~~~~~~~~~~~[] _ __ "+ i);
+                System.out.println(draw.drawings[2]+ i);
             }else if(i == (int)profundidadCaracol){
-                System.out.println("  []    _@)_/’    [] _ __ "+ i);
+                System.out.println(draw.drawings[3] + i);
             }else{
-                System.out.println("  []:. :. :. :. :.[] _ __ "+ i);
+                System.out.println(draw.drawings[4]+ i);
             }
         }    
-        System.out.println("  [][][][][][][][][] ");
+        System.out.println(draw.drawings[5]);
         System.out.println();
         System.out.println();
 
