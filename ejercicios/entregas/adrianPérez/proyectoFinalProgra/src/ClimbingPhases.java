@@ -1,10 +1,10 @@
 public interface ClimbingPhases {
 
-    public double subida();
+    public double ascending();
 
-    public static double caida(){
-        double caida = (Math.random()*2);
-        return Math.round(caida*100.00)/100.00;
+    public static double falling(){
+        double fall = (Math.random()*2);
+        return Math.round(fall*100.00)/100.00;
     }
 
 }
