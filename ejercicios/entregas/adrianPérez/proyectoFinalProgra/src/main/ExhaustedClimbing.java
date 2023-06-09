@@ -1,8 +1,8 @@
 package main;
 
-public class ExhaustedClimbing {
-    private double ascending = calculateClimbing();
-    public int calculateClimbing(){
-        return (int) (Math.random() * (2-1+1)+1);
+public class ExhaustedClimbing implements ClimbingPhases{
+    @Override
+    public double ascending() {
+        return (int) ((Math.random() * 1) + 1);
     }
 }

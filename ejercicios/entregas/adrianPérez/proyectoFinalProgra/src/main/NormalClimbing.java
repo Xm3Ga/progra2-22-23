@@ -1,8 +1,8 @@
 package main;
 
-public class NormalClimbing {
-    private double ascending = calculateClimbing();
-public int calculateClimbing(){
-    return (int) (Math.random() * (4-1+1)+1);
-}    
+public class NormalClimbing implements ClimbingPhases{
+    @Override
+    public double ascending() {
+        return (int) ((Math.random() * 3) + 1);
+    }
 }

@@ -1,8 +1,8 @@
 package main;
 
-public class FatiguedClimbing {
-    private double ascending = calculateClimbing();
-    public int calculateClimbing(){
-        return (int) (Math.random() * (3-1+1)+1);
+public class FatiguedClimbing implements ClimbingPhases{
+    @Override
+    public double ascending() {
+        return (int) ((Math.random() * 2) + 1);
     }
 }
