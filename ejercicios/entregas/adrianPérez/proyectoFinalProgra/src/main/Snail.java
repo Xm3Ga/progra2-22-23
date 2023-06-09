@@ -2,7 +2,7 @@ package main;
 
 public class Snail {
     private double profundidadAgua = 20;
-    private double profundidadCaracol = 0;
+    private int profundidadCaracol = 0;
     private int dia = 0;
 
     public int getDia() {
@@ -15,7 +15,7 @@ public class Snail {
         return profundidadCaracol;
     }
     public void setProfundidadCaracol(double profundidadCaracol) {
-        this.profundidadCaracol = profundidadCaracol;
+        this.profundidadCaracol = (int) profundidadCaracol;
     }
     public double getProfundidadAgua() {
         return profundidadAgua;
@@ -25,8 +25,8 @@ public class Snail {
     }
 
     public int AlturaInicialCaracol() {
-        double alturaInicial = (Math.random()*10)+10;
+        int alturaInicial = (int) ((Math.random()*10)+10);
         profundidadCaracol = alturaInicial;
-        return (int) alturaInicial;
+        return alturaInicial;
     }
 }
