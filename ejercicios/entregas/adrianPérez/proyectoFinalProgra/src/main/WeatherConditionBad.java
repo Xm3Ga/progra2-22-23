@@ -1,8 +1,11 @@
 package main;
 
-public class WeatherConditionBad extends WeatherContitionAbstract{
+public class WeatherConditionBad implements WeatherCondition{
+
+    Snail snail = new Snail();
+
     public void subidaAguaLLuvia(){
-        setProfundidadAgua(getProfundidadAgua() - 2);
-        System.out.println("Lueve levemente");
+        snail.setProfundidadAgua(snail.getProfundidadAgua() - 2);
+        System.out.println("LLueve levemente");
     }
 }
