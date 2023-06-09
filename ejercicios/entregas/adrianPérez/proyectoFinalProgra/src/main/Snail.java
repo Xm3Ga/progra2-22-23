@@ -26,6 +26,7 @@ public class Snail {
 
     public int AlturaInicialCaracol() {
         double alturaInicial = (Math.random()*10)+10;
+        profundidadCaracol = alturaInicial;
         return (int) alturaInicial;
     }
 }
