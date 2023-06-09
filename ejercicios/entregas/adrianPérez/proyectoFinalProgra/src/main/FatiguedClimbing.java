@@ -1,3 +1,5 @@
+package main;
+
 public class FatiguedClimbing {
     private double ascending = calculateClimbing();
     public int calculateClimbing(){

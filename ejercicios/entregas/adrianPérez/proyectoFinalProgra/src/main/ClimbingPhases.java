@@ -1,3 +1,5 @@
+package main;
+
 public interface ClimbingPhases {
 
     public double ascending();
