@@ -23,4 +23,9 @@ public class Snail {
     public void setProfundidadAgua(double profundidadAgua) {
         this.profundidadAgua = profundidadAgua;
     }
+
+    public int AlturaInicialCaracol() {
+        double alturaInicial = (Math.random()*10)+10;
+        return (int) alturaInicial;
+    }
 }
