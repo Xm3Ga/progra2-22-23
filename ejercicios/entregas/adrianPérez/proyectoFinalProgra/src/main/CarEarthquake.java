@@ -20,7 +20,7 @@ public class CarEarthquake {
         if (tamañoCaida < 0.35) {
             snail.setProfundidadCaracol(snail.getProfundidadCaracol() + 2);
             car = true;
-            System.out.println("Ce cayo");
+            System.out.println("Hubo un temblor!");
         } 
     }
 }

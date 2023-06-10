@@ -30,17 +30,19 @@ public class Main {
                 exhaustedClimbing.falling();
             }else if(snail.getDia() == 50){
                 break;
-            }else{
+            }else if (snail.getDia() != 0){
                 normalClimbing.ascending();
                 normalClimbing.falling();
             }     
 
-            carEarthquake.carEarthquake();
+            if (snail.getDia() != 0) {
+                carEarthquake.carEarthquake();
+            }
 
-            double probabilidadLluvia = Math.random();
-            if( probabilidadLluvia <= 0.05 ){
+            double probabilidadLluvia = Math.random() * 101;
+            if( probabilidadLluvia <= 5 && snail.getDia() != 0){
                 weatherConditionWorse.subidaAguaLLuvia();
-            }else if( probabilidadLluvia >= 0.9 ){
+            }else if( (probabilidadLluvia >= 6 && probabilidadLluvia <= 15) && snail.getDia() != 0){
                 weatherConditionBad.subidaAguaLLuvia();
             }
 
@@ -66,7 +68,22 @@ public class Main {
         }    
         System.out.println(draw.drawings[5]);
         System.out.println();
-        System.out.println();
+        
+        if (snail.getProfundidadCaracol() > snail.getProfundidadCaracolTemp()) {
+            System.out.println("El caracol ha bajado " + (snail.getProfundidadCaracol() - snail.getProfundidadCaracolTemp()) + " metros");
+            snail.setProfundidadCaracolTemp(snail.getProfundidadCaracol());
+            System.out.println("\n");
+        }
+        else if (snail.getProfundidadCaracol() < snail.getProfundidadCaracolTemp()) {
+            System.out.println("El caracol ha subido " + (snail.getProfundidadCaracolTemp() - snail.getProfundidadCaracol()) + " metros");
+            snail.setProfundidadCaracolTemp(snail.getProfundidadCaracol());
+            System.out.println("\n");
+        }
+        else if (snail.getProfundidadCaracol() == snail.getProfundidadCaracolTemp() && snail.getDia() != 0){
+            System.out.println("El caracol se ha mantenido en la misma altura");
+            System.out.println("\n");
+        }
+        
 
         if ( snail.getProfundidadCaracol() <= 0 || snail.getProfundidadCaracol() >= snail.getProfundidadAgua() ){
             break;
@@ -74,7 +91,7 @@ public class Main {
 
         snail.setDia(snail.getDia() + 1);   
         try {
-            Thread.sleep(5000);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -84,9 +101,9 @@ public class Main {
     if((int)snail.getProfundidadCaracol() <= 0){
         System.out.println("El caracol ha conseguido salir!!!!");
     }else if((int)snail.getProfundidadCaracol() >= snail.getProfundidadAgua()){
-        System.out.println("El caracol se ahogo intentando salir en el dia() " + (snail.getDia()-1));
+        System.out.println("El caracol se ahogó intentando salir en el dia() " + (snail.getDia()));
     }else if(snail.getDia() == 50){
-        System.out.println("El caracol murio de inanicion tras luchar 50 dias");
+        System.out.println("El caracol murió de inanicion tras luchar 50 dias");
     }
 
     }
