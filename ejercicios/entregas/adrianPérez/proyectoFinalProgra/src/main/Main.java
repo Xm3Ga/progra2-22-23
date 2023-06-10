@@ -91,7 +91,7 @@ public class Main {
 
         snail.setDia(snail.getDia() + 1);   
         try {
-            Thread.sleep(500);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
