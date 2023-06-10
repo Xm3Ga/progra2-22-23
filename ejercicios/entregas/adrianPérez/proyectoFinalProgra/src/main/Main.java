@@ -73,7 +73,11 @@ public class Main {
         }
 
         snail.setDia(snail.getDia() + 1);   
-        
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         }
 
       
