@@ -4,6 +4,7 @@ public class NormalClimbing implements ClimbingPhases{
     
     Snail snail = new Snail();
     
+    
     public void ascending() {
         double tamañoCaida = Math.random();
         if (tamañoCaida < 0.25) {

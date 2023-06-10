@@ -3,13 +3,15 @@ package main;
 public class Main {
     public static void main(String[] args){
 
+
+
+        Snail snail = new Snail();
         WeatherConditionBad weatherConditionBad = new WeatherConditionBad();
         WeatherConditionWorse weatherConditionWorse = new WeatherConditionWorse();
         NormalClimbing normalClimbing = new NormalClimbing();
         FatiguedClimbing fatiguedClimbing = new FatiguedClimbing();
         ExhaustedClimbing exhaustedClimbing = new ExhaustedClimbing();
         CarEarthquake carEarthquake = new CarEarthquake();
-        Snail snail = new Snail();
         Draw draw = new Draw();
 
         boolean VidaCaracol = true;
@@ -71,11 +73,7 @@ public class Main {
         }
 
         snail.setDia(snail.getDia() + 1);   
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        
         }
 
       
