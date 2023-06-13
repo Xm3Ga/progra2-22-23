@@ -7,29 +7,29 @@ import org.junit.Test;
 public class ExhaustedClimbingTest extends ExhaustedClimbing {
 
     @Test
-    public void testAscendingWithTamañoCaidaLessThan0_5() {
+    public void testAscendingWithFallDistanceLessThan0_5() {
         Snail snail = new Snail();
-        snail.setProfundidadCaracol(15);
-        double tamañoCaida = 0.4;
-        if (tamañoCaida < 0.5) {
-            snail.setProfundidadCaracol(snail.getProfundidadCaracol() - 1);
+        snail.setSnailDepth(15);
+        double fallDistance = 0.4;
+        if (fallDistance < 0.5) {
+            snail.setSnailDepth(snail.getSnailDepth() - 1);
         } else {
-            snail.setProfundidadCaracol(snail.getProfundidadCaracol() - 2);
+            snail.setSnailDepth(snail.getSnailDepth() - 2);
         }
-        assertEquals(14, snail.getProfundidadCaracol());
+        assertEquals(14, snail.getSnailDepth());
     }
 
     @Test
-    public void testAscendingWithTamañoCaidaMoreThan0_5() {
+    public void testAscendingWithFallDistanceMoreThan0_5() {
         Snail snail = new Snail();
-        snail.setProfundidadCaracol(15);
-        double tamañoCaida = 0.6;
-        if (tamañoCaida < 0.5) {
-            snail.setProfundidadCaracol(snail.getProfundidadCaracol() - 1);
+        snail.setSnailDepth(15);
+        double fallDistance = 0.6;
+        if (fallDistance < 0.5) {
+            snail.setSnailDepth(snail.getSnailDepth() - 1);
         } else {
-            snail.setProfundidadCaracol(snail.getProfundidadCaracol() - 2);
+            snail.setSnailDepth(snail.getSnailDepth() - 2);
         }
-        assertEquals(13, snail.getProfundidadCaracol());
+        assertEquals(13, snail.getSnailDepth());
         
     }
 }

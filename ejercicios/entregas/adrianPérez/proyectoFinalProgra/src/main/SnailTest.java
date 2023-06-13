@@ -8,7 +8,7 @@ public class SnailTest extends Snail{
 
     @Test
     public void snailStarts() {
-        int alturaInicial = 13;
-        assertEquals(13, alturaInicial);
+        int initialDepth = 13;
+        assertEquals(13, initialDepth);
     }
 }

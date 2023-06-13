@@ -5,24 +5,24 @@ public class ExhaustedClimbing implements ClimbingPhases{
     Snail snail = new Snail();
     
     public void ascending() {
-        double tamañoCaida = Math.random();
-        if (tamañoCaida < 0.5) {
-            snail.setProfundidadCaracol(snail.getProfundidadCaracol() - 1);
-            System.out.println("El caracol subió 1 metro durante el dia");
+        double fallDistance = Math.random();
+        if (fallDistance < 0.5) {
+            snail.setSnailDepth(snail.getSnailDepth() - 1);
+            System.out.println("The snail climbed 1 meter during the day");
         } else {
-            snail.setProfundidadCaracol(snail.getProfundidadCaracol() - 2);
-            System.out.println("El caracol subió 2 metros durante el dia");
+            snail.setSnailDepth(snail.getSnailDepth() - 2);
+            System.out.println("The snail climbed 2 meters during the day");
         }
     }
 
     public void falling() {
-        double tamañoCaida = Math.random();
-        if (tamañoCaida < 1/3) {
-            snail.setProfundidadCaracol(snail.getProfundidadCaracol() + 1);
-        } else if (tamañoCaida < 2/3) {
-            snail.setProfundidadCaracol(snail.getProfundidadCaracol() + 2);
+        double fallDistance = Math.random();
+        if (fallDistance < 1/3) {
+            snail.setSnailDepth(snail.getSnailDepth() + 1);
+        } else if (fallDistance < 2/3) {
+            snail.setSnailDepth(snail.getSnailDepth() + 2);
         } else {
-            snail.setProfundidadCaracol(snail.getProfundidadCaracol() + 0);
+            snail.setSnailDepth(snail.getSnailDepth() + 0);
         }
         
     }

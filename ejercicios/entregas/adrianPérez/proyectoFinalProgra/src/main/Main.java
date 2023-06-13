@@ -14,39 +14,39 @@ public class Main {
         CarEarthquake carEarthquake = new CarEarthquake();
         Draw draw = new Draw();
 
-        boolean VidaCaracol = true;
+        boolean snailAlive = true;
  
-        if (snail.getDia() == 0){
-            snail.AlturaInicialCaracol();
+        if (snail.getDay() == 0){
+            snail.initialSnailDepth();
             }
 
-        while (VidaCaracol){
+        while (snailAlive){
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("                                                                     ");
-            System.out.println("Dia " + snail.getDia() + " de 50");
+            System.out.println("Day " + snail.getDay() + " out of 50");
 
-            if(snail.getDia() > 10 && snail.getDia() <= 20){
+            if(snail.getDay() > 10 && snail.getDay() <= 20){
                 fatiguedClimbing.ascending();
                 fatiguedClimbing.falling();
-            }else if(snail.getDia() > 20 && snail.getDia() < 50){
+            }else if(snail.getDay() > 20 && snail.getDay() < 50){
                 exhaustedClimbing.ascending();
                 exhaustedClimbing.falling();
-            }else if(snail.getDia() == 50){
+            }else if(snail.getDay() == 50){
                 break;
-            }else if (snail.getDia() != 0){
+            }else if (snail.getDay() != 0){
                 normalClimbing.ascending();
                 normalClimbing.falling();
             }     
 
-            if (snail.getDia() != 0) {
+            if (snail.getDay() != 0) {
                 carEarthquake.carEarthquake();
             }
 
-            double probabilidadLluvia = Math.floor(Math.random() * 101);
-            if( probabilidadLluvia <= 5 && snail.getDia() != 0){
-                weatherConditionWorse.subidaAguaLLuvia();
-            }else if( (probabilidadLluvia >= 6 && probabilidadLluvia <= 15) && snail.getDia() != 0){
-                weatherConditionBad.subidaAguaLLuvia();
+            double rainProbabilty = Math.floor(Math.random() * 101);
+            if( rainProbabilty <= 5 && snail.getDay() != 0){
+                weatherConditionWorse.rainwaterRise();
+            }else if( (rainProbabilty >= 6 && rainProbabilty <= 15) && snail.getDay() != 0){
+                weatherConditionBad.rainwaterRise();
             }
 
 
@@ -61,9 +61,9 @@ public class Main {
                     System.out.println(draw.drawings[1]);
                 }
 
-            }else if (i >= snail.getProfundidadAgua()){
+            }else if (i >= snail.getWaterDepth()){
                 System.out.println(draw.drawings[2]+ i);
-            }else if(i == (int)snail.getProfundidadCaracol()){
+            }else if (i == (int)snail.getSnailDepth()){
                 System.out.println(draw.drawings[3] + i);
             }else{
                 System.out.println(draw.drawings[4]+ i);
@@ -73,35 +73,35 @@ public class Main {
         System.out.println(draw.drawings[5]);
         System.out.println();
         
-        if (snail.getProfundidadCaracol() > snail.getProfundidadCaracolTemp()) {
-            System.out.println("El caracol ha bajado " + (snail.getProfundidadCaracol() - snail.getProfundidadCaracolTemp()) + " metros");
-            snail.setProfundidadCaracolTemp(snail.getProfundidadCaracol());
+        if (snail.getSnailDepth() > snail.getSnailDepthTemp()) {
+            System.out.println("The snail has fallen " + (snail.getSnailDepth() - snail.getSnailDepthTemp()) + " metres");
+            snail.setSnailDepthTemp(snail.getSnailDepth());
             System.out.println("\n");
         }
-        else if (snail.getProfundidadCaracol() < snail.getProfundidadCaracolTemp()) {
-            System.out.println("El caracol ha subido " + (snail.getProfundidadCaracolTemp() - snail.getProfundidadCaracol()) + " metros");
-            snail.setProfundidadCaracolTemp(snail.getProfundidadCaracol());
+        else if (snail.getSnailDepth() < snail.getSnailDepthTemp()) {
+            System.out.println("The snail has fallen " + (snail.getSnailDepthTemp() - snail.getSnailDepth()) + " metres");
+            snail.setSnailDepthTemp(snail.getSnailDepth());
             System.out.println("\n");
         }
-        else if (snail.getProfundidadCaracol() == snail.getProfundidadCaracolTemp() && snail.getDia() != 0){
-            System.out.println("El caracol se ha mantenido en la misma altura");
+        else if (snail.getSnailDepth() == snail.getSnailDepthTemp() && snail.getDay() != 0){
+            System.out.println("The snail has not moved");
             System.out.println("\n");
         }
         
 
-        if ( snail.getProfundidadCaracol() <= 0 || snail.getProfundidadCaracol() >= snail.getProfundidadAgua() ){
+        if ( snail.getSnailDepth() <= 0 || snail.getSnailDepth() >= snail.getWaterDepth() ){
             break;
         }
 
-        if (snail.getDia() == 10) {
-            System.out.println("El caracol se ha cansado, ahora solo subirá entre 1 y 3 metros por dia");
+        if (snail.getDay() == 10) {
+            System.out.println("The snail is tired, now it will only climb between 1 and 3 meters per day");
         }
 
-        if (snail.getDia() == 20) {
-            System.out.println("El caracol está exhausto, ahora solo subirá entre 1 y 2 metros por dia");
+        if (snail.getDay() == 20) {
+            System.out.println("The snail is exhausted, now it will only climb between 1 and 2 meters per day");
         }
 
-        snail.setDia(snail.getDia() + 1);   
+        snail.setDay(snail.getDay() + 1);   
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
@@ -110,12 +110,12 @@ public class Main {
         }
 
       
-    if((int)snail.getProfundidadCaracol() <= 0){
-        System.out.println("El caracol ha conseguido salir!!!!");
-    }else if((int)snail.getProfundidadCaracol() >= snail.getProfundidadAgua()){
-        System.out.println("El caracol se ahogó intentando salir en el dia " + (snail.getDia()));
-    }else if(snail.getDia() == 50){
-        System.out.println("El caracol murió de inanicion tras luchar 50 dias");
+    if((int)snail.getSnailDepth() <= 0){
+        System.out.println("The snail escaped in " + (snail.getDay()) + " days");
+    }else if((int)snail.getSnailDepth() >= snail.getWaterDepth()){
+        System.out.println("The snail drowned in " + (snail.getDay()) + " days");
+    }else if(snail.getDay() == 50){
+        System.out.println("The snail did not escape in 50 days");
     }
 
     }

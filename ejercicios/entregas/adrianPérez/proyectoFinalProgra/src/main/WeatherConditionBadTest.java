@@ -9,26 +9,26 @@ public class WeatherConditionBadTest extends WeatherConditionBad{
     @Test
     public void testIfRainBad() {
         Snail snail = new Snail();
-        snail.setProfundidadAgua(18);
-        double probabilidadLluvia = 0.03;
-        if (probabilidadLluvia < 0.10) {
-            snail.setProfundidadAgua(snail.getProfundidadAgua() - 2);
+        snail.setWaterDepth(18);
+        double rainProbability = 0.03;
+        if (rainProbability < 0.10) {
+            snail.setWaterDepth(snail.getWaterDepth() - 2);
         } else {
-            snail.setProfundidadAgua(snail.getProfundidadAgua() - 0);
+            snail.setWaterDepth(snail.getWaterDepth() - 0);
         }
-        assertEquals(16, snail.getProfundidadAgua());  
+        assertEquals(16, snail.getWaterDepth());  
     }
 
     @Test
     public void testIfNotRainBad() {
         Snail snail = new Snail();
-        snail.setProfundidadAgua(18);
-        double probabilidadLluvia = 0.33;
-        if (probabilidadLluvia < 0.10) {
-            snail.setProfundidadAgua(snail.getProfundidadAgua() - 2);
+        snail.setWaterDepth(18);
+        double rainProbability = 0.33;
+        if (rainProbability < 0.10) {
+            snail.setWaterDepth(snail.getWaterDepth() - 2);
         } else {
-            snail.setProfundidadAgua(snail.getProfundidadAgua() - 0);
+            snail.setWaterDepth(snail.getWaterDepth() - 0);
         }
-        assertEquals(18, snail.getProfundidadAgua());  
+        assertEquals(18, snail.getWaterDepth());  
     } 
 }
