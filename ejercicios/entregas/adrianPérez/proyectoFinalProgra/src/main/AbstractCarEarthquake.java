@@ -1,6 +1,6 @@
 package main;
 
-public abstract class CarEarthquakeAbstract {
+public abstract class AbstractCarEarthquake {
 
     protected boolean car = false;
 

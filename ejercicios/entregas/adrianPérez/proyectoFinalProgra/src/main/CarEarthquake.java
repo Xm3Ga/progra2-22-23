@@ -1,6 +1,6 @@
 package main;
 
-public class CarEarthquake extends CarEarthquakeAbstract{
+public class CarEarthquake extends AbstractCarEarthquake{
 
     Snail snail = new Snail();
 
