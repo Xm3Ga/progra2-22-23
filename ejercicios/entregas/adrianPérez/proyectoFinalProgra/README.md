@@ -34,14 +34,14 @@ Heavy Rain:
 ![alt text](https://files.catbox.moe/q0qf0n.jpeg)
 
 
-Fatigued:
-
-![alt text](https://files.catbox.moe/4fwdk5.jpeg)
-
-
 Earthquake:
 
 ![alt text](https://files.catbox.moe/4ky1ly.jpeg)
+
+
+Fatigued:
+
+![alt text](https://files.catbox.moe/4fwdk5.jpeg)
 
 
 Exhausted:
