@@ -8,8 +8,10 @@ public class ExhaustedClimbing implements ClimbingPhases{
         double tamañoCaida = Math.random();
         if (tamañoCaida < 0.5) {
             snail.setProfundidadCaracol(snail.getProfundidadCaracol() - 1);
+            System.out.println("El caracol subió 1 metro durante el dia");
         } else {
             snail.setProfundidadCaracol(snail.getProfundidadCaracol() - 2);
+            System.out.println("El caracol subió 2 metros durante el dia");
         }
     }
 

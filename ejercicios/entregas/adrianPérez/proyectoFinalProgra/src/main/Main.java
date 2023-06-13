@@ -22,6 +22,8 @@ public class Main {
 
         while (VidaCaracol){
 
+            System.out.println("Dia " + snail.getDia() + " de 50");
+
             if(snail.getDia() > 10 && snail.getDia() <= 20){
                 fatiguedClimbing.ascending();
                 fatiguedClimbing.falling();
@@ -88,6 +90,14 @@ public class Main {
 
         if ( snail.getProfundidadCaracol() <= 0 || snail.getProfundidadCaracol() >= snail.getProfundidadAgua() ){
             break;
+        }
+
+        if (snail.getDia() == 10) {
+            System.out.println("El caracol se ha cansado, ahora solo subirá entre 1 y 3 metros por dia");
+        }
+
+        if (snail.getDia() == 20) {
+            System.out.println("El caracol está exhausto, ahora solo subirá entre 1 y 2 metros por dia");
         }
 
         snail.setDia(snail.getDia() + 1);   
