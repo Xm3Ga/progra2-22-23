@@ -20,7 +20,7 @@ public class Main {
             snail.AlturaInicialCaracol();
             }
 
-        while ( VidaCaracol ){
+        while (VidaCaracol){
 
             if(snail.getDia() > 10 && snail.getDia() <= 20){
                 fatiguedClimbing.ascending();
