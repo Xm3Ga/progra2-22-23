@@ -4,11 +4,18 @@ Every day he climbs some and falls a little, but he will grow more tired as the 
 
 Will the snail get out of the well before he dies of starvation on the fiftieth day or falls to the water due to the rain?
 # Functions list:
+- [x] Function 1: Snail's movement
+ 
+The snail's movement is determined in a range and depending on how long he's been trapped inside the well that range will decrease, going from 1 to 4 meters upwards until day 10, past day 11 and until day 20 the snail will move from 1 to 3 meters upwards. Finally, past day 20 the snail will move 1 or 2 meters upwards. Furthermore, every night he has the probability of either falling up to 2 meters, or not falling at all
 
-- [x] Funcionalidad 1
+- [x] Function 2: Car
+
+Every day, there's a 35% chance of a car passing by the well, provoking an earthquake that will make the snail fall 2 meters apart from the ones he falls every night
 
 
-- [ ] Funcionalidad 2
+- [x] Function 3: Rain
+
+There are three different weathers that can be: clear weather with an 85% of probability, then there's light rain with a 10% of probability which makes the water level rise 2 meters, and lastly, there's a 5% of probability of heavy rain, which will raise the water level 5 meters
 
 # Class diagram
 
