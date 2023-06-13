@@ -39,7 +39,7 @@ public class Main {
                 carEarthquake.carEarthquake();
             }
 
-            double probabilidadLluvia = Math.random() * 101;
+            double probabilidadLluvia = Math.floor(Math.random() * 101);
             if( probabilidadLluvia <= 5 && snail.getDia() != 0){
                 weatherConditionWorse.subidaAguaLLuvia();
             }else if( (probabilidadLluvia >= 6 && probabilidadLluvia <= 15) && snail.getDia() != 0){
