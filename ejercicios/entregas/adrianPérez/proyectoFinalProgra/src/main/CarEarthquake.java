@@ -9,7 +9,7 @@ public class CarEarthquake extends AbstractCarEarthquake{
         if (tamañoCaida < 0.35) {
             snail.setProfundidadCaracol(snail.getProfundidadCaracol() + 2);
             car = true;
-            System.out.println("Hubo un temblor!");
+            System.out.println("Hubo un temblor!, el caracol cayó 2 metros más profundo");
         } 
     }
 

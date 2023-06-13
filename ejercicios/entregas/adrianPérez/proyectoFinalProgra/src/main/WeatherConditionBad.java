@@ -6,6 +6,6 @@ public class WeatherConditionBad implements WeatherCondition{
 
     public void subidaAguaLLuvia(){
         snail.setProfundidadAgua(snail.getProfundidadAgua() - 2);
-        System.out.println("LLueve levemente");
+        System.out.println("LLueve levemente, el agua sube 2 metros");
     }
 }

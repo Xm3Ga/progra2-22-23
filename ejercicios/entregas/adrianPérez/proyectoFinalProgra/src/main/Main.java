@@ -21,7 +21,8 @@ public class Main {
             }
 
         while (VidaCaracol){
-
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            System.out.println("                                                                     ");
             System.out.println("Dia " + snail.getDia() + " de 50");
 
             if(snail.getDia() > 10 && snail.getDia() <= 20){
