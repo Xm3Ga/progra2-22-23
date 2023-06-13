@@ -39,7 +39,7 @@ public class Main {
                 carEarthquake.carEarthquake();
             }
 
-            double probabilidadLluvia = Math.random() * 101;
+            double probabilidadLluvia = Math.floor(Math.random() * 101);
             if( probabilidadLluvia <= 5 && snail.getDia() != 0){
                 weatherConditionWorse.subidaAguaLLuvia();
             }else if( (probabilidadLluvia >= 6 && probabilidadLluvia <= 15) && snail.getDia() != 0){
@@ -102,7 +102,7 @@ public class Main {
     if((int)snail.getProfundidadCaracol() <= 0){
         System.out.println("El caracol ha conseguido salir!!!!");
     }else if((int)snail.getProfundidadCaracol() >= snail.getProfundidadAgua()){
-        System.out.println("El caracol se ahogó intentando salir en el dia() " + (snail.getDia()));
+        System.out.println("El caracol se ahogó intentando salir en el dia " + (snail.getDia()));
     }else if(snail.getDia() == 50){
         System.out.println("El caracol murió de inanicion tras luchar 50 dias");
     }
