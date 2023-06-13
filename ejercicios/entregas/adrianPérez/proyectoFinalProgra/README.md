@@ -69,6 +69,6 @@ Enjoy the project.
 
 # Authors: 
 
-- Adrian Pérez Bahamontes
-- Miguel Gómez
-- José Salceda
+- Adrian Pérez Bahamontes (Xm3Ga)
+- Miguel Gómez (miguelgomez75)
+- José Salceda (Pepe0410)
