@@ -74,4 +74,4 @@ Enjoy the project.
 - José Salceda (Pepe0410)
 
 # Clarification:
-I (as the owner of the repository fork), gave edit permissions to Miguel and José, so they were able to commit they're changes directly, instead of having to PR. This is due to a problem regarding the ability to make PRs as a non-owner.
+I (as the owner of the repository fork), gave edit permissions to Miguel and José, so they were able to commit their changes directly, instead of having to PR. This is due to a problem regarding the ability to make PRs as a non-owner.
