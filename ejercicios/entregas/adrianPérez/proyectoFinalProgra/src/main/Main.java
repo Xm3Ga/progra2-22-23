@@ -47,6 +47,7 @@ public class Main {
             }
 
 
+        System.out.println(" ");
         for(int i = 0; i <=20 ; i=i+1){
             if(i == 0){
                 if(carEarthquake.isCar() == true){
@@ -91,7 +92,7 @@ public class Main {
 
         snail.setDia(snail.getDia() + 1);   
         try {
-            Thread.sleep(10000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

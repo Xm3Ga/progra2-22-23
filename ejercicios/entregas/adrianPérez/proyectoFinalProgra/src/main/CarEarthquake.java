@@ -1,19 +1,6 @@
 package main;
 
-public class CarEarthquake {
-
-    Snail snail = new Snail();
-
-    private boolean car = false;
-
-    public boolean isCar() {
-        return car;
-    }
-    public void setCar(boolean car) {
-        this.car = car;
-    }
-
-
+public class CarEarthquake extends CEquakeAbstract{
 
     public void carEarthquake() {
         double tamañoCaida = Math.random();
