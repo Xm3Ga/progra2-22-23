@@ -25,23 +25,23 @@ PlantUML:
 # Screenshoots:
 
 Light Rain:
-![alt text](https://files.catbox.moe/m50yux.jpeg"Light Rain")
+![alt text](https://files.catbox.moe/m50yux.jpeg)
 
 
 Heavy Rain:
-![alt text](https://files.catbox.moe/q0qf0n.jpeg"Heavy Rain")
+![alt text](https://files.catbox.moe/q0qf0n.jpeg)
 
 
 Fatigued:
-![alt text](https://files.catbox.moe/4fwdk5.jpeg"Fatigued")
+![alt text](https://files.catbox.moe/4fwdk5.jpeg)
 
 
 Earthquake:
-![alt text](https://files.catbox.moe/4ky1ly.jpeg"Earthquake")
+![alt text](https://files.catbox.moe/4ky1ly.jpeg)
 
 
 Exhausted:
-![alt text](https://files.catbox.moe/w4fjy5.jpeg"Exhausted")
+![alt text](https://files.catbox.moe/w4fjy5.jpeg)
 
 
 # Using instructions:
