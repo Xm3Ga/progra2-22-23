@@ -27,17 +27,22 @@ PlantUML:
 Light Rain:
 ![alt text](https://files.catbox.moe/m50yux.jpeg"Light Rain")
 
+
 Heavy Rain:
 ![alt text](https://files.catbox.moe/q0qf0n.jpeg"Heavy Rain")
+
 
 Fatigued:
 ![alt text](https://files.catbox.moe/4fwdk5.jpeg"Fatigued")
 
+
 Earthquake:
 ![alt text](https://files.catbox.moe/4ky1ly.jpeg"Earthquake")
 
+
 Exhausted:
 ![alt text](https://files.catbox.moe/w4fjy5.jpeg"Exhausted")
+
 
 # Using instructions:
 
