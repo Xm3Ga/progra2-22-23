@@ -8,7 +8,6 @@ public abstract class AbstractSnail {
     static int dia = 0;
 
     abstract int getDia();
-
     abstract void setDia(int dia);
     abstract double getProfundidadCaracol();
     abstract void setProfundidadCaracol(double profundidadCaracol);
@@ -16,6 +15,5 @@ public abstract class AbstractSnail {
     abstract void setProfundidadCaracolTemp(double profundidadCaracolTemp);
     abstract double getProfundidadAgua();
     abstract void setProfundidadAgua(double profundidadAgua);
-
     abstract int AlturaInicialCaracol();
 }
