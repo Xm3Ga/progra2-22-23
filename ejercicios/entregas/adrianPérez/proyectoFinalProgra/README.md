@@ -20,11 +20,27 @@ There are three different weathers that can be: clear weather with an 85% of pro
 # Class diagram
 
 PlantUML: 
-![alt text](http://www.plantuml.com/plantuml/uml/xLLD2nen4BtlhyXnHVG7B3rerK91Yc31G-bXDecxeTd4viCMslxtZffbJHFPej1JR-FCc_V6oJnTM0V6-KuMK5jdW3go3C4Ap0PhxLSFNpZvKH0o8nHCHMgj9GU5YIaH5c7b94vQxYxPUp0YpbgmQvdU4vTzvLUHZh1N86IGFXbzz8e91cpPUAW8qxwM_CyQ2WFLiY92kGUrZxmx3NKceFym9GrtQm7bPCZOMwP7XMbxy2uXnzumMMZFOJBpXgQ4FpVyk4R0vR_xY5POS5Oa0kHV9A9TIkSDl5U22f1XX7wx-E1KWhKaERH7D_BKnQ4Cgd5p1Ch9Iegk5ghPjM2v3LfWALSCiv7E4QIyomtZhWry2vqCGyJOYkoTmU3Jvm6s-Tw2juwpNlCvjNVWHEDVPVcWJGVoDOx1ZDDRN4x-lMV-UsOuvWC7rtApqiZdX5RXRQolaVx2ljtwiu3a9PF6jy2UxZreO_bVTEV_LTxydCrY_nVHR_yDS0sBsBjOcSzJa-LGmKCZeDWYHRBS2oYtkN7aiATYmHNpdVmD"PlantUML")
+![alt text](https://www.plantuml.com/plantuml/png/xLLD2nen4BtlhyXnHVG7B3rerK91Yc31G-bXDecxeTd4viCMslxtZffbJHFPej1JR-FCc_V6oJnTM0V6-KuMK5jdW3go3C4Ap0PhxLSFNpZvKH0o8nHCHMgj9GU5YIaH5c7b94vQxYxPUp0YpbgmQvdU4vTzvLUHZh1N86IGFXbzz8e91cpPUAW8qxwM_CyQ2WFLiY92kGUrZxmx3NKceFym9GrtQm7bPCZOMwP7XMbxy2uXnzumMMZFOJBpXgQ4FpVyk4R0vR_xY5POS5Oa0kHV9A9TIkSDl5U22f1XX7wx-E1KWhKaERH7D_BKnQ4Cgd5p1Ch9Iegk5ghPjM2v3LfWALSCiv7E4QIyomtZhWry2vqCGyJOYkoTmU3Jvm6s-Tw2juwpNlCvjNVWHEDVPVcWJGVoDOx1ZDDRN4x-lMV-UsOuvWC7rtApqiZdX5RXRQolaVx2ljtwiu3a9PF6jy2UxZreO_bVTEV_LTxydCrY_nVHR_yDS0sBsBjOcSzJa-LGmKCZeDWYHRBS2oYtkN7aiATYmHNpdVmD"PlantUML")
 
 # Screenshoots:
 
 # Using instructions:
+
+1.
+Go to this repository (https://github.com/Xm3Ga/progra2-22-23/tree/proyectoFinalProgra) and download the repository.
+
+2.
+Unzip it if it is compressed and navigate to the main.java file in the 'proyectoFinalProgra' folder.
+
+3.
+Open it using any IDE you want. For this tutorial we used Visual Studio Code using the required Java extensions.
+
+4.
+In Windows, use F5 to automatically compile and run the program.
+
+5.
+Enjoy the project.
+
 
 # Authors: 
 
