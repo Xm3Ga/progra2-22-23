@@ -1,6 +1,8 @@
 package main;
 
-public class CarEarthquake extends CEquakeAbstract{
+public class CarEarthquake extends CarEarthquakeAbstract{
+
+    Snail snail = new Snail();
 
     public void carEarthquake() {
         double tamañoCaida = Math.random();
@@ -9,5 +11,13 @@ public class CarEarthquake extends CEquakeAbstract{
             car = true;
             System.out.println("Hubo un temblor!");
         } 
+    }
+
+    public boolean isCar() {
+        return car;
+    }
+
+    public void setCar(boolean car) {
+        this.car = car;
     }
 }
