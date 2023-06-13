@@ -25,6 +25,16 @@ PlantUML:
 # Screenshoots:
 
 # Using instructions:
+1.
+Go to this repository (https://github.com/Xm3Ga/progra2-22-23/tree/proyectoFinalProgra) and download the repository.
+2.
+Unzip it if it is compressed and navigate to the main.java file in the 'proyectoFinalProgra' folder.
+3.
+Open it using any IDE you want. For this tutorial we used Visual Studio Code using the required Java extensions.
+4.
+In Windows, use F5 to automatically compile and run the program.
+5.
+Enjoy the project.
 
 # Authors: 
 
